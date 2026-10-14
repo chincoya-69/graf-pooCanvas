@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1120">
+
+    <title>Pong Multiball - Versión 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">PROYECTO POO + CANVAS</p>
+                <h1>PONG <span>MULTIBALL</span></h1>
+            </div>
+
+            <div class="version">VERSIÓN 2.0</div>
+        </header>
+
+        <section class="game-panel">
+
+            <div class="hud">
+                <span>
+                    <i class="dot cyan"></i>
+                    JUGADOR
+                </span>
+
+                <span class="center-label">
+                    5 PELOTAS EN JUEGO
+                </span>
+
+                <span>
+                    CPU
+                    <i class="dot pink"></i>
+                </span>
+            </div>
+
+            <canvas
+                id="gameCanvas"
+                width="800"
+                height="600"
+                aria-label="Juego Pong con cinco pelotas">
+            </canvas>
+
+            <div class="controls">
+                <p>
+                    <kbd>↑</kbd>
+                    <kbd>↓</kbd>
+                    mover paleta
+                </p>
+
+                <p>
+                    La paleta del jugador tiene el doble
+                    de altura y puede rebotar las cinco pelotas.
+                </p>
+            </div>
+
+        </section>
+
+        <footer>
+            Hecho con HTML, CSS, JavaScript y Canvas
+        </footer>
+
+    </main>
+
+    <script src="game.js"></script>
+</body>
+</html>
